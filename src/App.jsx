@@ -57,6 +57,12 @@ const capabilities = [
     icon: Database,
   },
   {
+    title: "Custom Mining Applications",
+    description:
+      "Field calculators, doré gold valuation tools, production dashboards, KPI charts, and data visualization systems for mining teams.",
+    icon: BarChart3,
+  },
+  {
     title: "JV / Pilot Project Support",
     description:
       "Disciplined project setup, field planning, documentation, and coordination for cooperative or pilot-stage work.",
@@ -205,7 +211,7 @@ function App() {
               title="Integrated support for exploration and resource development."
               intro="Aurora works across the practical and technical parts of remote mining projects, from field evaluation to data organization and operating support."
             />
-            <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
               {capabilities.map((capability) => (
                 <CapabilityCard key={capability.title} {...capability} />
               ))}
@@ -233,8 +239,11 @@ function App() {
               <p className="mt-7 text-lg leading-8 text-[#d7e4e5]">
                 We use mapping, GIS, surveying workflows, data organization, and operational tracking to support better decision-making in mining and exploration projects. Our approach is practical: technology should improve field execution, reduce uncertainty, and support responsible development.
               </p>
+              <p className="mt-5 text-lg leading-8 text-[#d7e4e5]">
+                We also build practical mining applications such as doré gold bar calculators, production dashboards, pit evaluation views, sales KPI tables, Google Sheets data workflows, and visual reporting tools for field and management use.
+              </p>
               <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-                {["Digital mapping", "Field data", "Operational tracking"].map((item) => (
+                {["Digital mapping", "Field calculators", "Dashboards and KPIs"].map((item) => (
                   <div key={item} className="border border-[#3f647b] bg-white/[0.06] p-4 text-sm font-semibold text-aurora-paleGold">
                     {item}
                   </div>
