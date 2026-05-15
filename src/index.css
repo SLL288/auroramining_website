@@ -32,13 +32,13 @@ body {
   }
 
   .form-field {
-    @apply grid gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-aurora-paleGold;
+    @apply grid gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-aurora-navy;
   }
 
   .form-field input,
   .form-field select,
   .form-field textarea {
-    @apply w-full border border-aurora-line bg-aurora-ink/70 px-4 py-3 text-base normal-case tracking-normal text-white outline-none transition placeholder:text-aurora-mist/35 focus:border-aurora-gold focus:ring-4 focus:ring-aurora-gold/15;
+    @apply w-full border border-aurora-line/55 bg-white px-4 py-3 text-base normal-case tracking-normal text-aurora-ink outline-none transition placeholder:text-aurora-slate/70 focus:border-aurora-gold focus:ring-4 focus:ring-aurora-gold/20;
   }
 }
 

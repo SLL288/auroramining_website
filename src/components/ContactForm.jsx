@@ -11,7 +11,7 @@ function ContactForm() {
   };
 
   return (
-    <form className="grid grid-cols-1 gap-5 border border-aurora-gold/25 bg-aurora-navy/82 p-5 shadow-panel backdrop-blur sm:grid-cols-2 sm:p-7" onSubmit={handleSubmit}>
+    <form className="grid grid-cols-1 gap-5 border border-aurora-gold/35 bg-white/82 p-5 shadow-panel backdrop-blur sm:grid-cols-2 sm:p-7" onSubmit={handleSubmit}>
       <label className="form-field">
         Name
         <input name="name" autoComplete="name" required />
@@ -47,7 +47,7 @@ function ContactForm() {
         <Send size={18} />
         Send Inquiry
       </button>
-      <p className="min-h-6 text-sm font-semibold text-aurora-paleGold sm:col-span-2" role="status">
+      <p className="min-h-6 text-sm font-semibold text-aurora-blue sm:col-span-2" role="status">
         {status}
       </p>
     </form>

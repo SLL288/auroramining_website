@@ -174,12 +174,12 @@ function App() {
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_0.9fr] lg:px-10">
             <div>
               <SectionHeading eyebrow="Founder Background" title="Technical planning with operational context." />
-              <p className="mt-7 max-w-3xl text-lg leading-8 text-aurora-mist/80">
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d7e4e5]">
                 Our leadership background combines surveying, geomatics, GIS, computer science, and hands-on mining project coordination. This technical and operational foundation allows us to approach mining projects with both field practicality and data-driven planning.
               </p>
             </div>
-            <div className="border border-aurora-line bg-aurora-panel/70 p-6 shadow-panel">
-              <ul className="space-y-4 text-aurora-mist/85">
+            <div className="border border-[#3f647b] bg-[#0d2a3f] p-6 shadow-panel">
+              <ul className="space-y-4 text-[#d7e4e5]">
                 {[
                   "Background in geomatics, GIS, surveying, and computer science",
                   "Experience in remote mining operations and project coordination",
@@ -230,12 +230,12 @@ function App() {
             </div>
             <div className="self-center">
               <SectionHeading eyebrow="Technology" title="Technology-Enabled Field Operations" />
-              <p className="mt-7 text-lg leading-8 text-aurora-mist/80">
+              <p className="mt-7 text-lg leading-8 text-[#d7e4e5]">
                 We use mapping, GIS, surveying workflows, data organization, and operational tracking to support better decision-making in mining and exploration projects. Our approach is practical: technology should improve field execution, reduce uncertainty, and support responsible development.
               </p>
               <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {["Digital mapping", "Field data", "Operational tracking"].map((item) => (
-                  <div key={item} className="border border-aurora-line bg-white/[0.03] p-4 text-sm font-semibold text-aurora-paleGold">
+                  <div key={item} className="border border-[#3f647b] bg-white/[0.06] p-4 text-sm font-semibold text-aurora-paleGold">
                     {item}
                   </div>
                 ))}
@@ -307,7 +307,7 @@ function App() {
       </main>
 
       <footer className="border-t border-aurora-line bg-aurora-ink px-5 py-8 sm:px-8 lg:px-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-5 text-sm text-aurora-mist/65 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 text-sm text-[#d7e4e5] sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt="" className="h-12 w-12 object-contain" />
             <span>Aurora Mining Services</span>

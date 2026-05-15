@@ -19,7 +19,7 @@ function SectionHeading({ eyebrow, title, intro, tone = "dark" }) {
         {title}
       </h2>
       {intro && (
-        <p className={`mt-6 max-w-3xl text-lg leading-8 ${isLight ? "text-aurora-slate" : "text-aurora-mist/75"}`}>
+        <p className={`mt-6 max-w-3xl text-lg leading-8 ${isLight ? "text-aurora-slate" : "text-[#d7e4e5]"}`}>
           {intro}
         </p>
       )}
