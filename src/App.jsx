@@ -84,23 +84,23 @@ const values = [
 
 function App() {
   return (
-    <div className="min-h-screen bg-aurora-ink text-white">
+    <div className="min-h-screen bg-aurora-stone text-aurora-ink">
       <Header logo={logo} />
 
       <main>
         <section id="top" className="relative isolate overflow-hidden bg-aurora pt-28 lg:pt-32">
           <div className="topographic-pattern opacity-35" aria-hidden="true" />
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-aurora-ink to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-aurora-stone to-transparent" />
           <div className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-7xl grid-cols-1 items-center gap-12 px-5 pb-20 pt-10 sm:px-8 lg:grid-cols-[1.08fr_0.92fr] lg:px-10">
             <div className="relative z-10">
-              <div className="mb-8 inline-flex items-center gap-3 border border-aurora-gold/35 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-aurora-paleGold">
+              <div className="mb-8 inline-flex items-center gap-3 border border-aurora-gold/45 bg-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-aurora-navy shadow-sm">
                 <span className="h-px w-9 bg-aurora-gold" />
                 Mining services | geomatics | remote operations
               </div>
-              <h1 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-tight text-aurora-navy sm:text-6xl lg:text-7xl">
                 Mining Services Driven by Field Experience and Technology
               </h1>
-              <p className="mt-7 max-w-3xl text-lg leading-8 text-aurora-mist/85 sm:text-xl">
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-aurora-slate sm:text-xl">
                 Aurora Mining Services combines practical mining operations, geomatics, digital mapping, and project management experience to support exploration and resource development in remote environments.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -122,7 +122,7 @@ function App() {
                   className="relative z-10 mx-auto aspect-square w-full max-w-[520px] object-contain drop-shadow-[0_16px_30px_rgba(0,0,0,0.18)]"
                 />
               </div>
-              <div className="mt-4 grid grid-cols-3 border border-aurora-gold/25 bg-black/35 text-center text-xs font-semibold uppercase tracking-[0.18em] text-aurora-paleGold backdrop-blur-sm">
+              <div className="mt-4 grid grid-cols-3 border border-aurora-gold/40 bg-white/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-aurora-navy shadow-sm backdrop-blur-sm">
                 <span className="border-r border-aurora-line px-2 py-4">Precision</span>
                 <span className="border-r border-aurora-line px-2 py-4">Reliability</span>
                 <span className="px-2 py-4">Results</span>
@@ -131,14 +131,15 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="relative overflow-hidden bg-aurora-ink py-24 sm:py-28">
+        <section id="about" className="relative overflow-hidden bg-aurora-stone py-24 sm:py-28">
           <div className="map-grid opacity-30" aria-hidden="true" />
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-5 sm:px-8 lg:grid-cols-[0.84fr_1.16fr] lg:px-10">
             <SectionHeading
               eyebrow="About Aurora"
               title="Practical field experience shaped by technical discipline."
+              tone="light"
             />
-            <div className="space-y-6 text-lg leading-8 text-aurora-mist/78">
+            <div className="space-y-6 text-lg leading-8 text-aurora-slate">
               <p>
                 Aurora Mining Services was created to bring together practical field experience, technical knowledge, and disciplined project coordination for mining and exploration projects. The company is built around hands-on operational understanding, modern geomatics tools, and a practical approach to remote resource development.
               </p>
@@ -242,22 +243,23 @@ function App() {
               <SectionHeading
                 eyebrow="Contact"
                 title="Discuss mining services, exploration support, or project cooperation."
+                tone="light"
               />
-              <p className="mt-7 text-lg leading-8 text-aurora-mist/80">
+              <p className="mt-7 text-lg leading-8 text-aurora-slate">
                 Connect with us to discuss mining services, exploration support, or project cooperation.
               </p>
-              <div className="mt-8 space-y-4 text-aurora-mist/75">
+              <div className="mt-8 space-y-4 text-aurora-slate">
                 <p>
-                  <span className="font-semibold text-aurora-paleGold">Email:</span>{" "}
+                  <span className="font-semibold text-aurora-navy">Email:</span>{" "}
                   info@auroraminingservices.com
                 </p>
                 <p>
-                  <span className="font-semibold text-aurora-paleGold">LinkedIn:</span>{" "}
+                  <span className="font-semibold text-aurora-navy">LinkedIn:</span>{" "}
                   linkedin.com/company/aurora-mining-services
                 </p>
               </div>
-              <div className="mt-10 border border-aurora-gold/25 bg-aurora-navy/60 p-5 shadow-gold">
-                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-aurora-paleGold">
+              <div className="mt-10 border border-aurora-gold/35 bg-white/70 p-5 shadow-gold backdrop-blur-sm">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-aurora-navy">
                   Company Contacts
                 </h3>
                 <div className="mt-5 grid gap-4">
@@ -266,10 +268,10 @@ function App() {
                     { name: "Allen Liu", role: "General Manager", phone: "+231 773339999", href: "tel:+231773339999" },
                   ].map((contact) => (
                     <div key={contact.name} className="border-l-2 border-aurora-gold pl-4">
-                      <p className="text-lg font-semibold text-white">{contact.name}</p>
-                      <p className="text-sm text-aurora-mist/65">{contact.role}</p>
+                      <p className="text-lg font-semibold text-aurora-navy">{contact.name}</p>
+                      <p className="text-sm text-aurora-slate">{contact.role}</p>
                       <a
-                        className="mt-2 inline-flex items-center gap-2 font-semibold text-aurora-paleGold transition hover:text-white"
+                        className="mt-2 inline-flex items-center gap-2 font-semibold text-aurora-blue transition hover:text-aurora-ink"
                         href={contact.href}
                       >
                         <Phone size={16} />

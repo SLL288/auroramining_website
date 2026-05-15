@@ -25,17 +25,25 @@ function Header({ logo }) {
       className={`fixed inset-x-0 top-0 z-50 border-b transition ${
         isScrolled || isOpen
           ? "border-aurora-line bg-aurora-navy/95 shadow-panel backdrop-blur"
-          : "border-white/10 bg-aurora-navy/45 backdrop-blur-sm"
+          : "border-aurora-gold/25 bg-white/72 shadow-sm backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
         <a href="#top" className="flex min-w-0 items-center gap-3" aria-label="Aurora Mining Services home">
           <img src={logo} alt="" className="h-12 w-12 shrink-0 object-contain" />
           <span className="min-w-0">
-            <span className="block text-sm font-semibold uppercase tracking-[0.18em] text-white sm:text-base">
+            <span
+              className={`block text-sm font-semibold uppercase tracking-[0.18em] sm:text-base ${
+                isScrolled || isOpen ? "text-white" : "text-aurora-navy"
+              }`}
+            >
               Aurora
             </span>
-            <span className="block text-xs font-semibold uppercase tracking-[0.16em] text-aurora-paleGold">
+            <span
+              className={`block text-xs font-semibold uppercase tracking-[0.16em] ${
+                isScrolled || isOpen ? "text-aurora-paleGold" : "text-aurora-blue"
+              }`}
+            >
               Mining Services
             </span>
           </span>
@@ -46,14 +54,21 @@ function Header({ logo }) {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-semibold text-aurora-mist/78 transition hover:text-aurora-paleGold"
+              className={`text-sm font-semibold transition hover:text-aurora-gold ${
+                isScrolled ? "text-aurora-mist/78" : "text-aurora-navy"
+              }`}
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        <a className="hidden border border-aurora-gold px-5 py-3 text-sm font-semibold text-aurora-paleGold transition hover:bg-aurora-gold hover:text-aurora-ink lg:inline-flex" href="#contact">
+        <a
+          className={`hidden border border-aurora-gold px-5 py-3 text-sm font-semibold transition hover:bg-aurora-gold hover:text-aurora-ink lg:inline-flex ${
+            isScrolled ? "text-aurora-paleGold" : "text-aurora-navy"
+          }`}
+          href="#contact"
+        >
           Contact Us
         </a>
 
