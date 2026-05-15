@@ -114,15 +114,15 @@ function App() {
             </div>
 
             <div className="relative z-10 mx-auto w-full max-w-[520px] lg:max-w-none">
-              <div className="logo-orbit absolute -inset-8 rounded-full blur-2xl" aria-hidden="true" />
-              <div className="logo-plate relative overflow-hidden border border-aurora-gold/35 p-2 shadow-panel backdrop-blur-sm">
+              <div className="logo-orbit absolute -inset-10 rounded-full blur-2xl" aria-hidden="true" />
+              <div className="logo-plate relative overflow-hidden border border-aurora-gold/45 p-3 shadow-panel">
                 <img
                   src={logo}
                   alt="Aurora Mining Services logo"
-                  className="relative z-10 mx-auto aspect-square w-full max-w-[520px] object-contain drop-shadow-[0_18px_34px_rgba(0,0,0,0.28)]"
+                  className="relative z-10 mx-auto aspect-square w-full max-w-[520px] object-contain drop-shadow-[0_16px_30px_rgba(0,0,0,0.18)]"
                 />
               </div>
-              <div className="mt-4 grid grid-cols-3 border border-aurora-gold/20 bg-black/20 text-center text-xs font-semibold uppercase tracking-[0.18em] text-aurora-paleGold backdrop-blur-sm">
+              <div className="mt-4 grid grid-cols-3 border border-aurora-gold/25 bg-black/35 text-center text-xs font-semibold uppercase tracking-[0.18em] text-aurora-paleGold backdrop-blur-sm">
                 <span className="border-r border-aurora-line px-2 py-4">Precision</span>
                 <span className="border-r border-aurora-line px-2 py-4">Reliability</span>
                 <span className="px-2 py-4">Results</span>

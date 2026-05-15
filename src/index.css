@@ -76,33 +76,36 @@ body {
 
 .logo-orbit {
   background:
-    radial-gradient(circle, rgba(214, 166, 66, 0.2), transparent 56%),
-    radial-gradient(circle at 42% 24%, rgba(134, 223, 189, 0.14), transparent 44%),
-    radial-gradient(circle at 50% 56%, rgba(0, 0, 0, 0.42), transparent 62%);
+    radial-gradient(circle, rgba(214, 166, 66, 0.16), transparent 58%),
+    radial-gradient(circle at 42% 24%, rgba(134, 223, 189, 0.1), transparent 44%),
+    radial-gradient(circle at 50% 56%, rgba(0, 0, 0, 0.3), transparent 62%);
 }
 
 .logo-plate {
   position: relative;
   background:
-    radial-gradient(circle at 50% 62%, rgba(224, 196, 128, 0.32), transparent 31%),
-    radial-gradient(circle at 42% 34%, rgba(134, 223, 189, 0.12), transparent 36%),
-    linear-gradient(145deg, rgba(57, 69, 62, 0.82), rgba(11, 15, 16, 0.86) 72%);
+    radial-gradient(circle at 50% 60%, rgba(237, 211, 151, 0.72), transparent 35%),
+    radial-gradient(circle at 42% 30%, rgba(194, 205, 176, 0.34), transparent 38%),
+    radial-gradient(circle at 72% 18%, rgba(25, 52, 61, 0.2), transparent 34%),
+    linear-gradient(145deg, #90927f 0%, #d0bd83 42%, #343d37 100%);
 }
 
 .logo-plate::before {
   position: absolute;
-  inset: 20% 10% 13%;
+  inset: 0;
   background:
-    radial-gradient(ellipse at 50% 72%, rgba(241, 210, 138, 0.48), transparent 42%),
-    radial-gradient(ellipse at 50% 48%, rgba(214, 224, 205, 0.24), transparent 54%);
+    radial-gradient(ellipse at 50% 67%, rgba(242, 214, 153, 0.92), transparent 34%),
+    radial-gradient(ellipse at 50% 50%, rgba(231, 236, 216, 0.34), transparent 48%),
+    linear-gradient(90deg, rgba(7, 19, 29, 0.15), transparent 18%, transparent 82%, rgba(7, 19, 29, 0.16));
   content: "";
-  filter: blur(24px);
+  filter: blur(10px);
 }
 
 .logo-plate::after {
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(241, 210, 138, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 46%, rgba(0, 0, 0, 0.18));
+  border: 1px solid rgba(241, 210, 138, 0.26);
   content: "";
   pointer-events: none;
 }
