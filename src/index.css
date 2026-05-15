@@ -5,7 +5,7 @@
 :root {
   color-scheme: light;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f4efe2;
+  background: #f6f2e8;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #f4efe2;
+  background: #f6f2e8;
 }
 
 ::selection {
@@ -52,9 +52,9 @@ body {
 
 .topographic-pattern {
   background-image:
-    radial-gradient(ellipse at 20% 20%, transparent 0 18%, rgba(214, 166, 66, 0.11) 18.4% 18.8%, transparent 19.2% 100%),
-    radial-gradient(ellipse at 65% 35%, transparent 0 25%, rgba(134, 223, 189, 0.08) 25.4% 25.8%, transparent 26.2% 100%),
-    radial-gradient(ellipse at 46% 72%, transparent 0 21%, rgba(241, 210, 138, 0.07) 21.4% 21.7%, transparent 22.1% 100%);
+    radial-gradient(ellipse at 20% 20%, transparent 0 18%, rgba(214, 166, 66, 0.08) 18.4% 18.8%, transparent 19.2% 100%),
+    radial-gradient(ellipse at 65% 35%, transparent 0 25%, rgba(45, 119, 117, 0.06) 25.4% 25.8%, transparent 26.2% 100%),
+    radial-gradient(ellipse at 46% 72%, transparent 0 21%, rgba(6, 32, 58, 0.06) 21.4% 21.7%, transparent 22.1% 100%);
   background-size: 760px 420px, 680px 460px, 620px 380px;
   background-position: -140px -80px, 48vw 20px, 24vw 260px;
 }
@@ -76,36 +76,31 @@ body {
 
 .logo-orbit {
   background:
-    radial-gradient(circle, rgba(214, 166, 66, 0.16), transparent 58%),
-    radial-gradient(circle at 42% 24%, rgba(134, 223, 189, 0.1), transparent 44%),
-    radial-gradient(circle at 50% 56%, rgba(0, 0, 0, 0.3), transparent 62%);
+    radial-gradient(circle, rgba(214, 166, 66, 0.14), transparent 58%),
+    radial-gradient(circle at 42% 24%, rgba(45, 119, 117, 0.12), transparent 44%),
+    radial-gradient(circle at 50% 56%, rgba(6, 32, 58, 0.08), transparent 62%);
 }
 
 .logo-plate {
   position: relative;
   background:
-    radial-gradient(circle at 50% 60%, rgba(237, 211, 151, 0.72), transparent 35%),
-    radial-gradient(circle at 42% 30%, rgba(194, 205, 176, 0.34), transparent 38%),
-    radial-gradient(circle at 72% 18%, rgba(25, 52, 61, 0.2), transparent 34%),
-    linear-gradient(145deg, #90927f 0%, #d0bd83 42%, #343d37 100%);
+    radial-gradient(circle at 48% 26%, rgba(201, 154, 59, 0.14), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(246, 242, 232, 0.94));
 }
 
 .logo-plate::before {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 67%, rgba(242, 214, 153, 0.92), transparent 34%),
-    radial-gradient(ellipse at 50% 50%, rgba(231, 236, 216, 0.34), transparent 48%),
-    linear-gradient(90deg, rgba(7, 19, 29, 0.15), transparent 18%, transparent 82%, rgba(7, 19, 29, 0.16));
+    linear-gradient(90deg, rgba(6, 32, 58, 0.04), transparent 20%, transparent 80%, rgba(6, 32, 58, 0.04)),
+    linear-gradient(180deg, rgba(201, 154, 59, 0.07), transparent 42%);
   content: "";
-  filter: blur(10px);
 }
 
 .logo-plate::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 46%, rgba(0, 0, 0, 0.18));
-  border: 1px solid rgba(241, 210, 138, 0.26);
+  border: 1px solid rgba(201, 154, 59, 0.2);
   content: "";
   pointer-events: none;
 }
@@ -113,5 +108,5 @@ body {
 .gold-rule {
   height: 1px;
   width: min(100%, 420px);
-  background: linear-gradient(90deg, #d6a642, transparent);
+  background: linear-gradient(90deg, #c99a3b, transparent);
 }

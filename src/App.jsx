@@ -113,14 +113,33 @@ function App() {
               </div>
             </div>
 
-            <div className="relative z-10 mx-auto w-full max-w-[520px] lg:max-w-none">
+            <div className="relative z-10 mx-auto w-full max-w-[560px] lg:max-w-none">
               <div className="logo-orbit absolute -inset-10 rounded-full blur-2xl" aria-hidden="true" />
-              <div className="logo-plate relative overflow-hidden border border-aurora-gold/45 p-3 shadow-panel">
-                <img
-                  src={logo}
-                  alt="Aurora Mining Services logo"
-                  className="relative z-10 mx-auto aspect-square w-full max-w-[520px] object-contain drop-shadow-[0_16px_30px_rgba(0,0,0,0.18)]"
-                />
+              <div className="logo-plate relative overflow-hidden border border-aurora-gold/35 p-6 shadow-panel">
+                <div className="relative z-10 grid gap-7">
+                  <img
+                    src={logo}
+                    alt="Aurora Mining Services logo"
+                    className="mx-auto aspect-square w-full max-w-[360px] object-contain drop-shadow-[0_14px_24px_rgba(6,32,58,0.16)]"
+                  />
+                  <div className="border-t border-aurora-line/60 pt-6">
+                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-aurora-gold">
+                      Operational Focus
+                    </p>
+                    <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                      {[
+                        ["Exploration", "Field evaluation and mapping"],
+                        ["Operations", "Remote project coordination"],
+                        ["Systems", "Data and reporting workflows"],
+                      ].map(([title, detail]) => (
+                        <div key={title} className="border-l-2 border-aurora-gold pl-3">
+                          <p className="font-semibold text-aurora-navy">{title}</p>
+                          <p className="mt-1 text-sm leading-5 text-aurora-slate">{detail}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="mt-4 grid grid-cols-3 border border-aurora-gold/40 bg-white/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-aurora-navy shadow-sm backdrop-blur-sm">
                 <span className="border-r border-aurora-line px-2 py-4">Precision</span>
