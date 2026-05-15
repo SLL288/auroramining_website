@@ -82,10 +82,29 @@ body {
 }
 
 .logo-plate {
+  position: relative;
   background:
-    radial-gradient(circle at 34% 18%, rgba(214, 166, 66, 0.2), transparent 34%),
-    radial-gradient(circle at 64% 28%, rgba(134, 223, 189, 0.09), transparent 32%),
-    linear-gradient(145deg, rgba(16, 39, 45, 0.42), rgba(11, 15, 16, 0.9));
+    radial-gradient(circle at 50% 62%, rgba(224, 196, 128, 0.32), transparent 31%),
+    radial-gradient(circle at 42% 34%, rgba(134, 223, 189, 0.12), transparent 36%),
+    linear-gradient(145deg, rgba(57, 69, 62, 0.82), rgba(11, 15, 16, 0.86) 72%);
+}
+
+.logo-plate::before {
+  position: absolute;
+  inset: 20% 10% 13%;
+  background:
+    radial-gradient(ellipse at 50% 72%, rgba(241, 210, 138, 0.48), transparent 42%),
+    radial-gradient(ellipse at 50% 48%, rgba(214, 224, 205, 0.24), transparent 54%);
+  content: "";
+  filter: blur(24px);
+}
+
+.logo-plate::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(241, 210, 138, 0.18);
+  content: "";
+  pointer-events: none;
 }
 
 .gold-rule {

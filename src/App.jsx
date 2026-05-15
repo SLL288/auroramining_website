@@ -115,11 +115,11 @@ function App() {
 
             <div className="relative z-10 mx-auto w-full max-w-[520px] lg:max-w-none">
               <div className="logo-orbit absolute -inset-8 rounded-full blur-2xl" aria-hidden="true" />
-              <div className="logo-plate relative overflow-hidden border border-aurora-gold/18 p-2 shadow-panel backdrop-blur-sm">
+              <div className="logo-plate relative overflow-hidden border border-aurora-gold/35 p-2 shadow-panel backdrop-blur-sm">
                 <img
                   src={logo}
                   alt="Aurora Mining Services logo"
-                  className="mx-auto aspect-square w-full max-w-[520px] object-contain mix-blend-screen opacity-95"
+                  className="relative z-10 mx-auto aspect-square w-full max-w-[520px] object-contain drop-shadow-[0_18px_34px_rgba(0,0,0,0.28)]"
                 />
               </div>
               <div className="mt-4 grid grid-cols-3 border border-aurora-gold/20 bg-black/20 text-center text-xs font-semibold uppercase tracking-[0.18em] text-aurora-paleGold backdrop-blur-sm">
