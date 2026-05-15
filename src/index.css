@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0b0f10;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0b0f10;
+}
+
+::selection {
+  background: rgba(214, 166, 66, 0.35);
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 border border-aurora-gold bg-aurora-gold px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-aurora-ink transition hover:bg-aurora-paleGold focus:outline-none focus:ring-4 focus:ring-aurora-gold/25;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-12 items-center justify-center gap-2 border border-aurora-gold/55 bg-white/5 px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-aurora-paleGold transition hover:bg-aurora-gold/10 focus:outline-none focus:ring-4 focus:ring-aurora-gold/20;
+  }
+
+  .form-field {
+    @apply grid gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-aurora-paleGold;
+  }
+
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    @apply w-full border border-aurora-line bg-aurora-ink/70 px-4 py-3 text-base normal-case tracking-normal text-white outline-none transition placeholder:text-aurora-mist/35 focus:border-aurora-gold focus:ring-4 focus:ring-aurora-gold/15;
+  }
+}
+
+.topographic-pattern,
+.map-grid,
+.survey-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.topographic-pattern {
+  background-image:
+    radial-gradient(ellipse at 20% 20%, transparent 0 18%, rgba(214, 166, 66, 0.11) 18.4% 18.8%, transparent 19.2% 100%),
+    radial-gradient(ellipse at 65% 35%, transparent 0 25%, rgba(134, 223, 189, 0.08) 25.4% 25.8%, transparent 26.2% 100%),
+    radial-gradient(ellipse at 46% 72%, transparent 0 21%, rgba(241, 210, 138, 0.07) 21.4% 21.7%, transparent 22.1% 100%);
+  background-size: 760px 420px, 680px 460px, 620px 380px;
+  background-position: -140px -80px, 48vw 20px, 24vw 260px;
+}
+
+.map-grid {
+  background-image:
+    linear-gradient(rgba(214, 166, 66, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214, 166, 66, 0.06) 1px, transparent 1px),
+    linear-gradient(135deg, transparent 0 48%, rgba(134, 223, 189, 0.07) 48.2% 48.8%, transparent 49% 100%);
+  background-size: 80px 80px, 80px 80px, 220px 220px;
+}
+
+.survey-lines {
+  background-image:
+    linear-gradient(115deg, transparent 0 42%, rgba(214, 166, 66, 0.1) 42.2% 42.6%, transparent 42.8% 100%),
+    linear-gradient(25deg, transparent 0 58%, rgba(134, 223, 189, 0.07) 58.2% 58.6%, transparent 58.8% 100%);
+  background-size: 420px 420px, 360px 360px;
+}
+
+.logo-orbit {
+  background:
+    radial-gradient(circle, rgba(214, 166, 66, 0.2), transparent 56%),
+    radial-gradient(circle at 42% 24%, rgba(134, 223, 189, 0.14), transparent 44%),
+    radial-gradient(circle at 50% 56%, rgba(0, 0, 0, 0.42), transparent 62%);
+}
+
+.logo-plate {
+  background:
+    radial-gradient(circle at 34% 18%, rgba(214, 166, 66, 0.2), transparent 34%),
+    radial-gradient(circle at 64% 28%, rgba(134, 223, 189, 0.09), transparent 32%),
+    linear-gradient(145deg, rgba(16, 39, 45, 0.42), rgba(11, 15, 16, 0.9));
+}
+
+.gold-rule {
+  height: 1px;
+  width: min(100%, 420px);
+  background: linear-gradient(90deg, #d6a642, transparent);
+}
